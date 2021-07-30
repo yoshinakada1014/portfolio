@@ -1,0 +1,168 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300&family=M+PLUS+Rounded+1c:wght@900&family=Noto+Sans+JP:wght@900&display=swap');
+/*
+全体
+*/
+body {
+    font-family: 'M PLUS 1p', sans-serif;
+    background: linear-gradient(45deg, #f1f2f5, #f7f7f8);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.content {
+    background-color: #fff;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .05);
+    position: relative;
+}
+h1 {
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 33px;
+}
+h2 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 25px;
+    margin-top: 30px;
+}
+h3 {
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+}
+p {
+    margin: 0;
+}
+img {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 30px 0;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .15);
+}
+table {
+    margin: 30px 0;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .15);
+}
+.borderRadius {
+    border-radius: 20px;
+}
+.marginTop20 {
+    margin-top: 20px;
+}
+/*
+ロゴ
+*/
+.logo {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 30px;
+}
+/*
+アイコン
+*/
+.icons {
+    width: 70px;
+    height: 70px;
+    background-color: #000;
+    border-radius: 35px;
+    position: absolute;
+    text-align: center;
+    line-height: 83px;
+    top:20px;
+    right:-30px;
+}
+i {
+    color: #fff;
+}
+/*
+ナビゲーション
+*/
+.bg-pink {
+	background: linear-gradient(to right, #e7497c, #fe8840);
+}
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-toggler {
+	color: #fff;
+}
+@media only screen and (max-width: 1199px) {
+    h1 {
+        font-size: 29px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 25px;
+    }
+}
+/*
+ボタン
+*/
+.btn-pink {
+	background-color: #ef4b75;
+    color: #fff;
+}
+.btn-pink:hover {
+    background-color: #fe6758;
+    color: #fff;
+}
+/*
+説明
+*/
+.intro {
+    border: 1px solid #ef4b75;
+    border-radius: 20px;
+    width: 100%;
+    padding: 20px;
+}
+/*
+topへもどる
+*/
+#page_top{
+    width: 90px;
+    height: 90px;
+    position: fixed;
+    right: 0;
+    bottom: 50px;
+    opacity: 0.6;
+  }
+  #page_top a{
+    position: relative;
+    display: block;
+    width: 90px;
+    height: 90px;
+    text-decoration: none;
+  }
+  #page_top a::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f102';
+    font-size: 25px;
+    color: #e7497c;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -40px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+  }
+  #page_top a::after{
+    content: 'PAGE TOP';
+    font-size: 13px;
+    color: #fff;
+    position: absolute;
+    top: 45px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+    color: #e7497c;
+  }
